@@ -227,7 +227,12 @@
                 <th></th>
             </tr>
         </table>
-    </div>
+    </div> 
+</section>
+
+<section class="download">
+    <h2>Download to register</h2>
+    <a href="<?php echo get_template_directory_uri(); ?>/pdf/register.pdf" download="Register">Download</a>
 </section>
 
 <section class="schedule">
