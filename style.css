@@ -1,0 +1,197 @@
+/*
+Theme Name: Ampro
+Author: Pablo Ramirez
+Description: Ampro theme
+Version: 1.0
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    background-color: #f9f9f9;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hero {
+    text-align: center;
+    height: 500px;
+    background: #000;
+    color: #fff;
+}
+
+.hero_inf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(135deg, #ce1b2890 0%, #11111190 74%);
+}
+
+.hero_inf h1,
+h2,
+h3,
+h4 {
+    margin: .5rem 0;
+}
+
+.hero_inf h4 {
+    font-style: italic;
+}
+
+.desc {
+    text-align: center;
+    padding: 5em 2em;
+}
+
+.desc p,
+.schedule p,
+.schedule ul li {
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 2.5em;
+}
+
+.desc h4 {
+    color: #a8592e!important;
+    font-style: italic;
+}
+
+.desc_detail,
+.desc_detail_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc_detail_left,
+.desc_detail_right {
+    margin: 1em;
+}
+
+.desc_detail_left img,
+.desc_detail_right img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.desc_detail_right {
+    width: 90%;
+}
+
+.desc_detail p {
+    color: #666666;
+}
+
+.parallax_content,
+.parallax_content1 {
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+}
+
+.parallax_content {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(249, 249, 249, 0) 100%);
+}
+
+.parallax_content1 {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(249, 249, 249, 0) 100%);
+}
+
+.schedule {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 5em 2em;
+}
+
+.program_detail {
+    margin: 2em auto;
+    max-width: 1024px;
+}
+
+.schedule h2,
+.schedule h4,
+.schedule strong {
+    color: #d0a84e;
+}
+
+.schedule ul {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.program_detail ul li,
+.desc_detail_right ul li,
+.desc_detail_left ul li,
+.schedule ul li {
+    margin: 1em 0;
+    padding-left: 1em;
+    text-indent: -.7em;
+}
+
+.desc_detail_right ul li::before,
+.desc_detail_left ul li::before {
+    content: "• ";
+    color: #A8592E;
+}
+
+.program_detail ul li::before,
+.schedule ul li::before {
+    content: "• ";
+    color: #d0a84e;
+}
+
+.desc table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+@media screen and (min-width: 768px) {
+    .desc_detail {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .desc_detail_left {
+        width: 50%;
+    }
+    .desc_detail_right {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .desc_detail {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
